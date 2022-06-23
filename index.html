@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="color:black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>PREDECTIVE MODEL</h2>
+            <h3>Head Size</h3>
+            <input id="first" name="Head Size(cm^3)" placeholder = "enter the head size in cm" type="text">
+            </select>
+            <br><br><button id="sub" type="submit ">Calculated weight</button>
+            <br>
+        </form>
+
+        <br>
+
+        {{ prediction_text}}
+
+
+
+
+
+        <style>
+            body::before {
+                content: "";
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+
+                /* Specify the background image to be used */
+                background-image: url('static/images/pg900.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+
+                /* Specify the background image */
+                opacity: 0.7;
+                z-index: -1;
+            }
+
+            body {
+
+                /* background-color: darkslategrey; */
+                text-align: center;
+                padding: 250px;
+                text
+                /* color: white; */
+
+            }
+
+            #sub {
+                width : 90px;
+                height : 45px;
+                text-align : center;
+                border-radius : 18px;
+                font-size : 15px;
+                background-color : cyan;
+            }
+        </style>
+        
+</body>
+
+</html>
